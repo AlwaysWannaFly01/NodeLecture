@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "awymodulecompute": "^1.0.0",
+    "uuid": "^8.3.0"
+  }
 }
