@@ -13,6 +13,7 @@ class UserController {
     }
 
     async userOtherOperation(userSessionId) {
+        // console.log('userSessionId: ' + userSessionId)
         const userId = await userService.getUserIdFromUserSessionByUserSessionId(userSessionId);
         console.log('userId from UserController: ' + userId);
 

@@ -6,7 +6,7 @@ class UserService {
     }
 
     async getUserIdFromUserSessionByUserSessionId(userSessionId) {
-        await userRedisDao.getUserIdFromUserSessionByUserSessionId(userSessionId);
+        return await userRedisDao.getUserIdFromUserSessionByUserSessionId(userSessionId);
     }
 
     async resetUserSessionExpirationTime(userSessionId) {

@@ -21,6 +21,7 @@ class UserRedisDao {
         const redis = this.getRedisConnection();
         return redis.get(redisKeyPrefix + userSessionId, (error, userId) => {
             redis.quit();
+            console.log('userId: ' + userId)
             return userId;/*先关闭连接,再返回*/
         });
     }
