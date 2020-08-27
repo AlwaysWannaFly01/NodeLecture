@@ -21,7 +21,7 @@ exports.doHttpDeleteRequest = function (ctx, requestUrl, param) {
 }
 
 
-module.doHttpRequest = function (ctx, requestUrl, param, method) {
+exports.doHttpRequest = function (ctx, requestUrl, param, method) {
     if (method === 'GET') {
         return axios({
             baseURL: hostBaseUrl,
@@ -34,7 +34,7 @@ module.doHttpRequest = function (ctx, requestUrl, param, method) {
             baseURL: hostBaseUrl,
             url: requestUrl,
             method: method,
-            data: params
+            data: param
         })
     }
 }
